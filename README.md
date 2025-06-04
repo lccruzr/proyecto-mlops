@@ -164,20 +164,3 @@ Grafana     → http://localhost:3000  (admin / admin)
   Abre `http://localhost:8501` y navega a la pestaña **Interpretabilidad**.
 
 ---
-
-## Preguntas Frecuentes
-
-**¿Dónde veo los modelos?**  
-En MLflow → pestaña *Models*. Cuando el DAG `train_realtor_model` finaliza, promueve el mejor experimento a *Production*.
-
-**¿Puedo escalar FastAPI?**  
-En Kubernetes, ajusta `replicas` en `infra/argo-cd/apps/umbrella/charts/api/values.yaml`.
-
-**¿Cómo añado un nuevo DAG?**  
-Crea el archivo en `dags/` y asegúrate de que el GitSync de Airflow (ya configurado) lo recoja.
-
----
-
-## Licencia
-
-MIT © 2025 ‑ Grupo 4 – Maestría MLOps
